@@ -1,5 +1,4 @@
 ﻿using GameEventsAnalyzer;
-
 internal class Program
 {
     static void Main()

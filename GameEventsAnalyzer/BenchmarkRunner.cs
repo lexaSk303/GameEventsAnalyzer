@@ -19,7 +19,7 @@ public static class BenchmarkRunner
         {
             var linqTime = Measure(() => GameEventAnalyzer.AnalyzeWithLinq(events));
             var plinqTime = Measure(() => GameEventAnalyzer.AnalyzeWithPlinq(events));
-
+            
             if (!linqTime.Result.SequenceEqual(plinqTime.Result))
                 throw new InvalidOperationException("Результаты LINQ и PLINQ не совпадают.");
 
